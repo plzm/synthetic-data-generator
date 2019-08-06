@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>sdfg.lib</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Field\FieldSpecContinuousNonNumeric.cs" />
+    <Compile Remove="Field\FieldSpecCopyField.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="2.6.1" />
+    <PackageReference Include="Microsoft.Hadoop.Avro2" Version="1.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="pelazem.util" Version="1.3.0" />
+  </ItemGroup>
+
+</Project>
