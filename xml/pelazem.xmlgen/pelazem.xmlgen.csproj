@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Patrick El-Azem (www.linkedin.com/in/pelazem)</Authors>
+    <Company />
+    <Description>A random XML generator. Given an XML schema (XSD), generates a corresponding XML document with random element/attribute values.</Description>
+    <RepositoryUrl>https://github.com/plzm/pelazem.xmlgen</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/plzm/pelazem.xmlgen</PackageProjectUrl>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>pelazem.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <PackageReleaseNotes>Based on https://msdn.microsoft.com/en-us/library/aa302296.aspx, created in 2004 by Priya Lakshminarayanan (https://www.linkedin.com/in/prial/). Modified heavily for functionality, structure, and encapsulation by Patrick El-Azem, in particular implementing actual random value generation which the original did not have.</PackageReleaseNotes>
+    <Version>1.2.1</Version>
+    <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="pelazem.rndgen" Version="1.4.4" />
+    <PackageReference Include="pelazem.util" Version="3.0.2" />
+  </ItemGroup>
+
+</Project>
